@@ -7,21 +7,12 @@
   "cheap": false,
   "veryPopular": false,
   "sustainable": false,
-  "weightWatcherSmartPoints": 9,
-  "gaps": "no",
-  "lowFodmap": false,
   "ketogenic": false,
   "whole30": false,
   "preparationMinutes": 10,
   "cookingMinutes": 10,
   "sourceUrl": "http://feedmephoebe.com/2013/11/job-food52s-pan-roasted-cauliflower/",
-  "spoonacularSourceUrl": "https://spoonacular.com/on-the-job-pan-roasted-cauliflower-from-food52-479101",
-  "aggregateLikes": 225,
-  "spoonacularScore": 97,
-  "healthScore": 46,
-  "creditsText": "Feed Me Phoebe",
   "sourceName": "Feed Me Phoebe",
-  "pricePerServing": 199.25,
   "extendedIngredients": [
     {
       "id": 18079,
@@ -43,7 +34,6 @@
   "image": "https://spoonacular.com/recipeImages/479101-556x370.jpg",
   "analyzedInstructions": [
     {
-      "name": "",
       "steps": [
         {
           "number": 1,

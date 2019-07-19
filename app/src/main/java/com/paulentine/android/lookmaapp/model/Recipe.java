@@ -1,6 +1,7 @@
 
 package com.paulentine.android.lookmaapp.model;
 
+import java.util.ArrayList;
 import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -31,15 +32,6 @@ public class Recipe {
     @SerializedName("sustainable")
     @Expose
     private Boolean sustainable;
-    @SerializedName("weightWatcherSmartPoints")
-    @Expose
-    private Integer weightWatcherSmartPoints;
-    @SerializedName("gaps")
-    @Expose
-    private String gaps;
-    @SerializedName("lowFodmap")
-    @Expose
-    private Boolean lowFodmap;
     @SerializedName("ketogenic")
     @Expose
     private Boolean ketogenic;
@@ -55,30 +47,12 @@ public class Recipe {
     @SerializedName("sourceUrl")
     @Expose
     private String sourceUrl;
-    @SerializedName("spoonacularSourceUrl")
-    @Expose
-    private String spoonacularSourceUrl;
-    @SerializedName("aggregateLikes")
-    @Expose
-    private Integer aggregateLikes;
-    @SerializedName("spoonacularScore")
-    @Expose
-    private Integer spoonacularScore;
-    @SerializedName("healthScore")
-    @Expose
-    private Integer healthScore;
-    @SerializedName("creditsText")
-    @Expose
-    private String creditsText;
     @SerializedName("sourceName")
     @Expose
     private String sourceName;
-    @SerializedName("pricePerServing")
-    @Expose
-    private Double pricePerServing;
     @SerializedName("extendedIngredients")
     @Expose
-    private List<ExtendedIngredient> extendedIngredients = null;
+    private List<ExtendedIngredient> extendedIngredients = new ArrayList<ExtendedIngredient>();
     @SerializedName("id")
     @Expose
     private Integer id;
@@ -96,7 +70,41 @@ public class Recipe {
     private String image;
     @SerializedName("analyzedInstructions")
     @Expose
-    private List<AnalyzedInstruction> analyzedInstructions = null;
+    private List<AnalyzedInstruction> analyzedInstructions = new ArrayList<AnalyzedInstruction>();
+
+    public Recipe() {
+        //empty constructor needed
+    }
+
+    public Recipe(Boolean vegetarian, Boolean vegan, Boolean glutenFree, Boolean dairyFree,
+                  Boolean veryHealthy, Boolean cheap, Boolean veryPopular, Boolean sustainable,
+                  Boolean ketogenic, Boolean whole30, Integer preparationMinutes,
+                  Integer cookingMinutes, String sourceUrl, String sourceName,
+                  List<ExtendedIngredient> extendedIngredients,
+                  Integer id, String title, Integer readyInMinutes, Integer servings, String image,
+                  List<AnalyzedInstruction> analyzedInstructions) {
+        this.vegetarian = vegetarian;
+        this.vegan = vegan;
+        this.glutenFree = glutenFree;
+        this.dairyFree = dairyFree;
+        this.veryHealthy = veryHealthy;
+        this.cheap = cheap;
+        this.veryPopular = veryPopular;
+        this.sustainable = sustainable;
+        this.ketogenic = ketogenic;
+        this.whole30 = whole30;
+        this.preparationMinutes = preparationMinutes;
+        this.cookingMinutes = cookingMinutes;
+        this.sourceUrl = sourceUrl;
+        this.sourceName = sourceName;
+        this.extendedIngredients = extendedIngredients;
+        this.id = id;
+        this.title = title;
+        this.readyInMinutes = readyInMinutes;
+        this.servings = servings;
+        this.image = image;
+        this.analyzedInstructions = analyzedInstructions;
+    }
 
     public Boolean getVegetarian() {
         return vegetarian;
@@ -162,30 +170,6 @@ public class Recipe {
         this.sustainable = sustainable;
     }
 
-    public Integer getWeightWatcherSmartPoints() {
-        return weightWatcherSmartPoints;
-    }
-
-    public void setWeightWatcherSmartPoints(Integer weightWatcherSmartPoints) {
-        this.weightWatcherSmartPoints = weightWatcherSmartPoints;
-    }
-
-    public String getGaps() {
-        return gaps;
-    }
-
-    public void setGaps(String gaps) {
-        this.gaps = gaps;
-    }
-
-    public Boolean getLowFodmap() {
-        return lowFodmap;
-    }
-
-    public void setLowFodmap(Boolean lowFodmap) {
-        this.lowFodmap = lowFodmap;
-    }
-
     public Boolean getKetogenic() {
         return ketogenic;
     }
@@ -226,60 +210,12 @@ public class Recipe {
         this.sourceUrl = sourceUrl;
     }
 
-    public String getSpoonacularSourceUrl() {
-        return spoonacularSourceUrl;
-    }
-
-    public void setSpoonacularSourceUrl(String spoonacularSourceUrl) {
-        this.spoonacularSourceUrl = spoonacularSourceUrl;
-    }
-
-    public Integer getAggregateLikes() {
-        return aggregateLikes;
-    }
-
-    public void setAggregateLikes(Integer aggregateLikes) {
-        this.aggregateLikes = aggregateLikes;
-    }
-
-    public Integer getSpoonacularScore() {
-        return spoonacularScore;
-    }
-
-    public void setSpoonacularScore(Integer spoonacularScore) {
-        this.spoonacularScore = spoonacularScore;
-    }
-
-    public Integer getHealthScore() {
-        return healthScore;
-    }
-
-    public void setHealthScore(Integer healthScore) {
-        this.healthScore = healthScore;
-    }
-
-    public String getCreditsText() {
-        return creditsText;
-    }
-
-    public void setCreditsText(String creditsText) {
-        this.creditsText = creditsText;
-    }
-
     public String getSourceName() {
         return sourceName;
     }
 
     public void setSourceName(String sourceName) {
         this.sourceName = sourceName;
-    }
-
-    public Double getPricePerServing() {
-        return pricePerServing;
-    }
-
-    public void setPricePerServing(Double pricePerServing) {
-        this.pricePerServing = pricePerServing;
     }
 
     public List<ExtendedIngredient> getExtendedIngredients() {
@@ -337,5 +273,4 @@ public class Recipe {
     public void setAnalyzedInstructions(List<AnalyzedInstruction> analyzedInstructions) {
         this.analyzedInstructions = analyzedInstructions;
     }
-
 }
