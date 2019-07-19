@@ -1,0 +1,41 @@
+{
+  "results": [
+    {
+      "id": 219957,
+      "title": "Carrot & sesame burgers",
+      "readyInMinutes": 50,
+      "servings": 6,
+      "image": "Carrot---sesame-burgers-219957.jpg",
+      "imageUrls": [
+        "Carrot---sesame-burgers-219957.jpg"
+      ]
+    },
+    {
+      "id": 864633,
+      "title": "Banh Mi Burgers with Spicy Sriracha Mayo",
+      "readyInMinutes": 35,
+      "servings": 4,
+      "image": "banh-mi-burgers-with-spicy-sriracha-mayo-864633.jpg",
+      "imageUrls": [
+        "banh-mi-burgers-with-spicy-sriracha-mayo-864633.jpg"
+      ]
+    },
+    {
+      "id": 219871,
+      "title": "Halloumi aubergine burgers with harissa relish",
+      "readyInMinutes": 20,
+      "servings": 4,
+      "image": "Halloumi-aubergine-burgers-with-harissa-relish-219871.jpg",
+      "imageUrls": [
+        "Halloumi-aubergine-burgers-with-harissa-relish-219871.jpg"
+      ]
+    }
+  ],
+  "baseUri": "https://spoonacular.com/recipeImages/",
+  "offset": 0,
+  "number": 3,
+  "totalResults": 75,
+  "processingTimeMs": 101,
+  "expires": 1563739871194,
+  "isStale": false
+}
