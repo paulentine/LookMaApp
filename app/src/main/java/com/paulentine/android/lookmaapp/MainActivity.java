@@ -92,8 +92,8 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_add) {
             Toast.makeText(this, "This is Add to Collection", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_view) {
-//            Intent i = new Intent(MainActivity.this,TutorialListActivity.class);
-//            startActivity(i);
+            Intent i = new Intent(MainActivity.this,RecipeListActivity.class);
+            startActivity(i);
             Toast.makeText(this, "This is See Collection", Toast.LENGTH_SHORT).show();
         }
 
