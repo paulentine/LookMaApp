@@ -45,7 +45,16 @@ public class DummyContent {
         StringBuilder builder = new StringBuilder();
         builder.append("Details about Item: ").append(position);
         for (int i = 0; i < position; i++) {
-            builder.append("\nMore details information here.");
+            builder.append("\nRecipe name: Strawberry Shortcake");
+            builder.append("\nPrep Time: 10 mins");
+            builder.append("\nCook Time: 40 mins");
+            builder.append("\nIngredients:");
+            builder.append("\n Strawberries");
+            builder.append("\n Shortcake");
+            builder.append("\nSteps:");
+            builder.append("\n Place strawberries on shortcake");
+            builder.append("\n Eat!");
+            builder.append("\n Celebrate");
         }
         return builder.toString();
     }
