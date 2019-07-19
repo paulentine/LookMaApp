@@ -1,5 +1,6 @@
 package com.paulentine.android.lookmaapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -20,6 +21,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -86,17 +88,13 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_tools) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+            Toast.makeText(this, "This is home", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.nav_add) {
+            Toast.makeText(this, "This is Add to Collection", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.nav_view) {
+//            Intent i = new Intent(MainActivity.this,TutorialListActivity.class);
+//            startActivity(i);
+            Toast.makeText(this, "This is See Collection", Toast.LENGTH_SHORT).show();
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
